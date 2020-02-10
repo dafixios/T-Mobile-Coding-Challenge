@@ -1,0 +1,11 @@
+1. What is done well?
+    - Use of lazy loading modules, to load faster the application.
+    - Well divide of backend and front end files.
+    - Use of cypress to get a complete end to end testing.
+    - Well structured the models, types and interfaces.
+2. What would you change?
+    - Folder structure, we can improve the structure of the components to make it easy to reuse.
+    - Move Shared files to our front end folder (depends on the project).
+    - Maybe move the Routing configuration from the module to another file to get it more organizated.
+3. Are there any code smells or problematic implementations?
+    - There was an issue with Google Charts due to the incorrect use of a variable in the template.
