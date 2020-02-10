@@ -8,6 +8,7 @@ import { map, skip } from 'rxjs/operators';
 @Injectable()
 export class PriceQueryFacade {
   selectedSymbol$ = this.store.pipe(select(getSelectedSymbol));
+
   priceQueries$ = this.store.pipe(
     select(getAllPriceQueries),
     skip(1),
@@ -21,4 +22,6 @@ export class PriceQueryFacade {
   fetchQuote(symbol: string, period: string) {
     this.store.dispatch(new FetchPriceQuery(symbol, period));
   }
+
+
 }
