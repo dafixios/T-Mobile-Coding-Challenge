@@ -1,4 +1,3 @@
-import { Subject } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PriceQueryFacade } from '@coding-challenge/stocks/data-access-price-query';
@@ -24,8 +23,7 @@ export class StocksComponent implements OnInit {
     this.maxDate = new Date();
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   fetchQuote() {
     if (this.stockPickerForm.valid) {
